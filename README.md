@@ -109,9 +109,6 @@ flowchart TB
 The investigation follows a structured sequence from sample identification to forensic reporting.
 
 ```mermaid
-### Malware Investigation Workflow
-
-```mermaid
 flowchart LR
     A[Sample] --> B[Hash]
     B --> C[Static Analysis]
@@ -119,9 +116,6 @@ flowchart LR
     D --> E[Forensics]
     E --> F[Report]
 ```
-
-```
-
 
 ### Processing Architecture
 
@@ -164,7 +158,7 @@ The triage utility is intended for preliminary analysis. Its output must be revi
 
 ---
 
-## 05. Technology Stack
+## 04. Technology Stack
 
 | Category | Tools |
 |---|---|
@@ -184,7 +178,7 @@ The triage utility is intended for preliminary analysis. Its output must be revi
 
 ---
 
-## 06. Repository Structure
+## 05. Repository Structure
 
 ```text
 sec04-malware-forensics/
@@ -229,7 +223,7 @@ sec04-malware-forensics/
 
 ---
 
-## 07. Testing and Validation
+## 06. Testing and Validation
 
 The existing Python test suite reports six successful unit tests using harmless test fixtures.
 
@@ -250,7 +244,7 @@ Additional validation is required for malformed files, large inputs, edge cases,
 
 ---
 
-## 08. Evidence and Investigation Status
+## 07. Evidence and Investigation Status
 
 This project maintains a distinction between collected evidence and pending investigation activities.
 
@@ -273,7 +267,7 @@ All future findings must be supported by actual tool outputs, screenshots or rep
 
 ---
 
-## 09. Security and Evidence Handling
+## 08. Security and Evidence Handling
 
 This project follows controlled malware-analysis practices.
 
@@ -288,7 +282,7 @@ This project follows controlled malware-analysis practices.
 
 ---
 
-## 10. Future Development Roadmap
+## 09. Future Development Roadmap
 
 - [ ] Complete advanced PE analysis.
 - [ ] Complete Ghidra reverse engineering documentation.
@@ -305,7 +299,7 @@ This project follows controlled malware-analysis practices.
 
 ---
 
-## 11. Learning Outcomes
+## 10. Learning Outcomes
 
 This project is intended to demonstrate practical understanding of:
 
@@ -321,7 +315,7 @@ This project is intended to demonstrate practical understanding of:
 
 ---
 
-## 12. Project Disclaimer
+## 11. Project Disclaimer
 
 This repository is maintained for educational, research and authorized cybersecurity investigation purposes.
 
@@ -331,8 +325,11 @@ All malware-related experiments must be performed in properly isolated and autho
 
 <p align="center">
   <strong>Malware Analysis · Reverse Engineering · Digital Forensics</strong>
+</p>
 
-  # 🛡️ Zero Trust Network Security & Perimeter Defense Lab
+---
+
+# Zero Trust Network Security & Perimeter Defense Lab
 
 ### Network Segmentation · Firewall Enforcement · IDS/IPS · VPN Security · Linux Hardening
 
@@ -341,11 +338,11 @@ All malware-related experiments must be performed in properly isolated and autho
 </p>
 
 <p align="center">
-  ![Security](https://img.shields.io/badge/Domain-Network%20Security-blue)
-  ![Architecture](https://img.shields.io/badge/Architecture-Zero%20Trust-purple)
-  ![IDS](https://img.shields.io/badge/Monitoring-Suricata-red)
-  ![Firewall](https://img.shields.io/badge/Firewall-pfSense-orange)
-  ![Status](https://img.shields.io/badge/Status-In%20Progress-orange)
+  <img src="https://img.shields.io/badge/Domain-Network%20Security-blue" alt="Network Security">
+  <img src="https://img.shields.io/badge/Architecture-Zero%20Trust-purple" alt="Zero Trust">
+  <img src="https://img.shields.io/badge/Monitoring-Suricata-red" alt="Suricata">
+  <img src="https://img.shields.io/badge/Firewall-pfSense-orange" alt="pfSense">
+  <img src="https://img.shields.io/badge/Status-In%20Progress-orange" alt="In Progress">
 </p>
 
 ---
@@ -835,7 +832,4 @@ All network testing must be performed within owned or explicitly authorized lab 
   <strong>Verify Every Access. Monitor Every Layer. Assume Nothing.</strong>
   <br/>
   <sub>Zero Trust · Network Defense · Security Monitoring</sub>
-</p>
-  <br/>
-  <sub>Investigate. Analyze. Correlate. Document.</sub>
 </p>
