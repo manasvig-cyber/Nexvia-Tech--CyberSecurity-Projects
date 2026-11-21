@@ -138,65 +138,6 @@ flowchart TD
     style P fill:#1e3a8a,color:#fff
 ```
 
-### Investigation Stages
-
-**Stage 1 – Sample Identification**
-
-- Obtain an authorized malware sample.
-- Extract the sample in the controlled environment.
-- Calculate cryptographic hashes.
-- Identify executable format and architecture.
-- Record sample metadata.
-
-**Stage 2 – Static Analysis**
-
-- Inspect PE headers and sections.
-- Identify compiler information.
-- Examine imported functions.
-- Extract ASCII and Unicode strings.
-- Identify suspicious indicators.
-- Perform reverse engineering with Ghidra.
-
-**Stage 3 – Dynamic Analysis**
-
-- Execute only inside the verified isolated environment.
-- Monitor process creation and termination.
-- Identify filesystem modifications.
-- Monitor registry modifications.
-- Capture DNS and network activity.
-- Correlate observed events with static findings.
-
-**Stage 4 – Digital Forensics**
-
-- Examine authorized disk images.
-- Identify filesystem artifacts.
-- Inspect Prefetch and alternate data streams.
-- Examine memory using Volatility 3.
-- Maintain evidence provenance and chain of custody.
-
-**Stage 5 – Threat Detection**
-
-- Develop YARA detection rules.
-- Validate rules against labelled test samples.
-- Identify potential false positives.
-- Document verified indicators of compromise.
-
----
-
-## 04. Automated Malware Triage Utility
-
-A dedicated Python utility is included to automate preliminary malware investigation.
-
-### Capabilities
-
-| Feature | Description |
-|---|---|
-| Hash Generation | MD5, SHA1 and SHA256 |
-| String Extraction | ASCII and UTF-16LE |
-| IOC Extraction | IPv4 addresses and URLs |
-| PE Analysis | Executable import inspection |
-| YARA Integration | Rule-based pattern matching |
-| Report Generation | Structured Markdown output |
 
 ### Processing Architecture
 
