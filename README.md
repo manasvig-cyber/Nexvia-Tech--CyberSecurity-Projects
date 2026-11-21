@@ -109,33 +109,17 @@ flowchart TB
 The investigation follows a structured sequence from sample identification to forensic reporting.
 
 ```mermaid
-flowchart TD
-    A([Investigation Begins]) --> B["Acquire Authorized Sample"]
-    B --> C["Calculate Cryptographic Hashes"]
-    C --> D["Identify File Type and PE Metadata"]
+### Malware Investigation Workflow
 
-    D --> E["Static Analysis"]
-    E --> F["Strings and Import Analysis"]
-    F --> G["Reverse Engineering with Ghidra"]
+```mermaid
+flowchart LR
+    A[Sample] --> B[Hash]
+    B --> C[Static Analysis]
+    C --> D[Dynamic Analysis]
+    D --> E[Forensics]
+    E --> F[Report]
+```
 
-    G --> H{"Additional Behavioral Analysis Required?"}
-    H -->|Yes| I["Controlled Dynamic Analysis"]
-    I --> J["Monitor Processes and Registry"]
-    J --> K["Capture Network Activity"]
-
-    H -->|No| L["Forensic Investigation"]
-    K --> L
-
-    L --> M["Autopsy and Memory Forensics"]
-    M --> N["IOC Extraction and YARA Evaluation"]
-    N --> O["Correlate Evidence"]
-    O --> P["Generate Investigation Report"]
-    P --> Q([Investigation Complete])
-
-    style A fill:#064e3b,color:#fff
-    style Q fill:#064e3b,color:#fff
-    style I fill:#7c2d12,color:#fff
-    style P fill:#1e3a8a,color:#fff
 ```
 
 
