@@ -1,4 +1,4 @@
-# 🔬 Malware Analysis & Digital Forensics Lab
+## Malware Analysis & Digital Forensics Lab
 
 ### A Practical Malware Investigation, Reverse Engineering & Digital Forensics Environment
 
@@ -7,12 +7,22 @@
 </p>
 
 <p align="center">
-  ![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20REMnux-blue)
-  ![Language](https://img.shields.io/badge/Language-Python-3776AB)
-  ![Focus](https://img.shields.io/badge/Focus-Malware%20Analysis-red)
-  ![Forensics](https://img.shields.io/badge/Domain-Digital%20Forensics-purple)
-  ![Status](https://img.shields.io/badge/Status-In%20Progress-orange)
+  <a href="https://www.microsoft.com/en-us/windows">
+    <img src="https://img.shields.io/badge/Platform-Windows%20%7C%20REMnux-0078D4?style=for-the-badge" alt="Platform">
+  </a>
+  <a href="https://www.python.org/">
+    <img src="https://img.shields.io/badge/Language-Python-3776AB?style=for-the-badge" alt="Language">
+  </a>
+  <a href="https://www.kali.org/">
+    <img src="https://img.shields.io/badge/Focus-Malware%20Analysis-red?style=for-the-badge" alt="Malware Analysis">
+  </a>
+  <a href="https://www.sleuthkit.org/autopsy/">
+    <img src="https://img.shields.io/badge/Forensics-Digital%20Forensics-purple?style=for-the-badge" alt="Digital Forensics">
+  </a>
+  <img src="https://img.shields.io/badge/Status-In%20Progress-orange?style=for-the-badge" alt="In Progress">
 </p>
+
+---
 
 ---
 
