@@ -2,7 +2,7 @@
 
 ### A Practical Malware Investigation, Reverse Engineering & Digital Forensics Environment
 
-<p align="center">
+<p align="right">
   <strong>Static Analysis · Dynamic Analysis · Reverse Engineering · Memory Forensics · Automated Malware Triage</strong>
 </p>
 
