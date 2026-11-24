@@ -1,0 +1,16 @@
+=== TRIAGE REPORT: 3797d5082f3612a2493ce6430ed09a61922573f6871401f95b0d2e735a12ada1.exe (660480 bytes) ===
+MD5     : 34e486e9bbc34d8084940d7694deb528
+SHA1    : b7e2acec6c1908f28c65214a9baf1409eb3788ff
+SHA256  : 3797d5082f3612a2493ce6430ed09a61922573f6871401f95b0d2e735a12ada1
+ENTROPY : 6.3830 / 8.0000
+
+[URLS] (1)
+  - https://pro.ip-api.com/line/?key=QPVvv1rHQJD2pd2&fields=25948155
+
+[IPS] (0)
+
+[DOMAINS] (2)
+  - BreakingSecurity.net
+  - pro.ip-api.com
+
+[REGISTRY] (0)

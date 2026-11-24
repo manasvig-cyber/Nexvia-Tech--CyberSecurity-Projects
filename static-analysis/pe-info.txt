@@ -1,0 +1,202 @@
+
+--------------------------------- File Information (time: 0:00:02.637354) ---------------------------------
+filename         /home/remnux/samples/family/unpacked/3797d5082f3612a2493ce6430ed09a61922573f6871401f95b0d2e735a12ada1.exe
+filetype         PE32+ executable (GUI) x86-64, for MS Windows, 6 sections
+filesize         660480
+md5              34e486e9bbc34d8084940d7694deb528
+sha1             b7e2acec6c1908f28c65214a9baf1409eb3788ff
+sha256           3797d5082f3612a2493ce6430ed09a61922573f6871401f95b0d2e735a12ada1
+virustotal       /
+imagebase        0x140000000 *
+entrypoint       0x4c630
+imphash          91e69cff27767212388496ea08379c84
+datetime         2026-08-22 13:37:21
+dll              False
+directories      import, tls, resources, relocations
+sections         .rdata, .data, .pdata, .rsrc, .reloc, .text *
+features         mutex, antidbg, packer, crypto
+
+----------------------------------------------- Yara Plugins -----------------------------------------------
+Microsoft Visual Cpp 80 DLL
+IsPE64
+IsWindowsGUI
+HasDebugData
+HasRichSignature
+Big Numbers3
+RijnDael AES
+
+------------------------------------------------- Behavior -------------------------------------------------
+ThreadControl  Context
+anti dbg
+Xor
+disable dep
+network dropper
+network tcp socket
+network dns
+escalate priv
+screenshot
+keylogger
+sniff audio
+win mutex
+win registry
+win token
+win files operation
+win hook
+
+-------------------------------------------------- Crypto --------------------------------------------------
+Big Numbers3
+RijnDael AES
+
+-------------------------------------------------- Packer --------------------------------------------------
+Microsoft Visual Cpp 80 DLL
+
+------------------------------------------------ Mutex Api ------------------------------------------------
+CreateMutexA
+OpenMutexA
+WaitForSingleObject
+WaitForSingleObjectEx
+
+------------------------------------------------ Anti Debug ------------------------------------------------
+GetLastError
+GetWindowThreadProcessId
+IsDebuggerPresent
+IsProcessorFeaturePresent
+Process32FirstW
+Process32NextW
+RaiseException
+TerminateProcess
+UnhandledExceptionFilter
+
+------------------------------------------- Sections Suspicious -------------------------------------------
+.text            6.43
+
+--------------------------------------------- Import function ---------------------------------------------
+KERNEL32.dll     170
+USER32.dll       44
+GDI32.dll        10
+ADVAPI32.dll     24
+SHELL32.dll      4
+ole32.dll        3
+WINMM.dll        10
+WS2_32.dll       9
+urlmon.dll       2
+gdiplus.dll      9
+WININET.dll      4
+
+------------------------------------------- Possibile Breakpoint -------------------------------------------
+CloseHandle
+CopyFileW
+CreateDirectoryW
+CreateFileW
+CreateMutexA
+CreateProcessA
+CreateThread
+CreateToolhelp32Snapshot
+DeleteCriticalSection
+DeleteFileA
+DeleteFileW
+ExitProcess
+ExitThread
+FindFirstFileExA
+FindFirstFileW
+FindNextFileA
+FindNextFileW
+FindResourceA
+GetCommandLineA
+GetCommandLineW
+GetCurrentProcess
+GetCurrentProcessId
+GetDriveTypeA
+GetFileAttributesW
+GetFileSize
+GetFileSizeEx
+GetModuleFileNameA
+GetModuleFileNameW
+GetModuleHandleA
+GetModuleHandleExW
+GetModuleHandleW
+GetProcAddress
+GetStartupInfoW
+GetTempFileNameW
+GetTempPathW
+GetThreadContext
+GetTickCount
+GetWindowThreadProcessId
+HeapAlloc
+InitializeCriticalSectionAndSpinCount
+InternetCloseHandle
+InternetOpenUrlW
+InternetOpenW
+InternetReadFile
+IsBadReadPtr
+IsDebuggerPresent
+LoadLibraryA
+LoadLibraryExW
+LoadLibraryW
+LockResource
+MessageBoxW
+OpenMutexA
+OpenProcess
+OpenProcessToken
+Process32FirstW
+Process32NextW
+ReadFile
+RegCloseKey
+RegCreateKeyA
+RegCreateKeyExW
+RegCreateKeyW
+RegDeleteKeyA
+RegDeleteValueW
+RegEnumKeyExA
+RegEnumKeyExW
+RegOpenKeyExA
+RegOpenKeyExW
+RemoveDirectoryW
+SetFilePointer
+SetFilePointerEx
+SetWindowsHookExA
+ShellExecuteExA
+ShellExecuteW
+Sleep
+TerminateProcess
+URLDownloadToFileW
+UnhandledExceptionFilter
+VirtualAlloc
+VirtualFree
+VirtualProtect
+WSAStartup
+WaitForSingleObject
+WaitForSingleObjectEx
+WriteFile
+WriteProcessMemory
+closesocket
+connect
+lstrcmpW
+recv
+send
+socket
+
+--------------------------------------------------- File ---------------------------------------------------
+cmd.exe          Executable
+svchost.exe      Executable
+license_code.txt Text
+Shlwapi.dll      Library
+PowrProf.dll     Library
+powershell.exe   Executable
+User32.dll       Library
+alarm.wav        Audio
+bcrypt.dll       Library
+advapi32.dll     Library
+BreakingSecurity.net Unknown
+KERNEL32.dll     Library
+GDI32.dll        Library
+SHELL32.dll      Library
+ole32.dll        Library
+WINMM.dll        Library
+WS2_32.dll       Library
+urlmon.dll       Library
+gdiplus.dll      Library
+WININET.dll      Library
+
+------------------------------------------------- Fuzzing -------------------------------------------------
+String too long
